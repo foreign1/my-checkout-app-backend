@@ -4,4 +4,4 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "My checkout backend"
+    return "<h2> Kindly direct all post requests to /api/v1/checkout/ "
