@@ -45,3 +45,16 @@ def cart_total():
         total += local_cart[item]["cost"]
     return total
 
+def apply_discount_to_cart(data):
+    for item in local_cart:
+        if data["discount"][item]:
+            # updates cost
+            x = local_cart[item]["count"]
+            rem = x % catalogue[item]["discount_min"]
+            if rem:
+                x = x-rem
+            x = x * catalogue[item]["discount"] * catalogue[item]["cost"]
+            local_cart[item]["cost"] = x + (rem * catalogue[item]["cost"])
+
+
+
