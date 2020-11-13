@@ -2,7 +2,7 @@ from flask import Flask, request, json
 from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 catalogue = {"Apple": {"cost": 0.60, "discount": 1/2, "discount_min": 1},
              "Orange": {"cost": 0.25, "discount": 2/3, "discount_min": 3}}
 
