@@ -1,7 +1,7 @@
 # my-checkout-app-backend
 ## Description
 My-checkout-app-backend powers the checkout system assessment project.
-It received cart list from the Frontend and returns a value in dollars/cent of the cart items.
+It receives cart list from the Frontend and returns a value in dollars/cent of the cart items.
 While making provisions for discounted and non discounted sales.
 
 #### The Flask framework was chosen to implement this project for the following reasons:
